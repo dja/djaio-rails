@@ -32,7 +32,7 @@ Rails.application.configure do
   config.action_cable.allowed_request_origins = [ 'https://dja.io', 'http://dja.io', 'https://www.dja.io', 'http://www.dja.io', 'https://danieljacobarcher.com', 'http://danieljacobarcher.com', 'https://www.danieljacobarcher.com', 'http://www.danieljacobarcher.com', 'https://djaio.herokuapp.com', 'http://djaio.herokuapp.com' ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  # config.force_ssl = true
+  config.force_ssl = true
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
