@@ -1,0 +1,85 @@
+{
+  "id": "5962bc35356b492de7721fe9",
+  "createdAt": 1499642933,
+  "type": "checkin",
+  "entities": [],
+  "shout": "Spiderman with Ethan and Dahlia!!",
+  "timeZoneOffset": -420,
+  "user": {
+    "id": "232771",
+    "firstName": "Daniel",
+    "lastName": "Archer",
+    "gender": "male",
+    "relationship": "self",
+    "photo": {
+      "prefix": "https://igx.4sqi.net/img/user/",
+      "suffix": "/232771-HG1Q2O3EXCAME1LL.jpg"
+    }
+  },
+  "venue": {
+    "id": "49f37e5df964a520a96a1fe3",
+    "name": "Island Cinema",
+    "contact": {
+      "phone": "8444627342",
+      "formattedPhone": "(844) 462-7342",
+      "twitter": "regalmovies"
+    },
+    "location": {
+      "address": "999 Newport Center Dr",
+      "lat": 33.6163307,
+      "lng": -117.876372,
+      "labeledLatLngs": [{
+        "label": "display",
+        "lat": 33.6163307,
+        "lng": -117.876372
+      }],
+      "postalCode": "92660",
+      "cc": "US",
+      "city": "Newport Beach",
+      "state": "CA",
+      "country": "United States",
+      "formattedAddress": [
+        "999 Newport Center Dr",
+        "Newport Beach, CA 92660"
+      ]
+    },
+    "categories": [{
+      "id": "4bf58dd8d48988d17f941735",
+      "name": "Movie Theater",
+      "pluralName": "Movie Theaters",
+      "shortName": "Movie Theater",
+      "icon": {
+        "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/movietheater_",
+        "suffix": ".png"
+      },
+      "primary": true
+    }],
+    "verified": true,
+    "stats": {
+      "checkinsCount": 3488,
+      "usersCount": 1806,
+      "tipCount": 28
+    },
+    "url": "https://www.regmovies.com/theaters/island-cinema/1414",
+    "allowMenuUrlEdit": true,
+    "beenHere": {
+      "lastCheckinExpiredAt": 0
+    },
+    "storeId": ""
+  },
+  "event": {
+    "id": "595db8923af988170594d44b",
+    "name": "Spider-Man: Homecoming 3D",
+    "categories": [{
+      "id": "4dfb90c6bd413dd705e8f897",
+      "name": "Movie",
+      "pluralName": "Movies",
+      "shortName": "Movie",
+      "icon": {
+        "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/movietheater_",
+        "suffix": ".png"
+      },
+      "primary": true
+    }]
+  }
+}
