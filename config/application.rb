@@ -26,10 +26,19 @@ module DjaioRails
     config.autoload_paths += Dir[Rails.root.join('app', 'api', '*')]
     config.autoload_paths += Dir[Rails.root.join('app', 'services', '**/')]
 
-    config.middleware.insert_before 0, Rack::Cors do
-      allow do
-        origins /^https?:\/\/[w{3}]?.*dja.io$/, /^https?:\/\/[w{3}]?.*danieljacobarcher.com$/, /^https?:\/\/djaio.herokuapp.com$/, '199.38.176.0/22'
-        resource '*', headers: :any, methods: [:get, :post, :options, :head]
+    if ENV['RAILS_ENV'] == 'development'
+      config.middleware.insert_before 0, Rack::Cors do
+        allow do
+          origins '*'
+          resource '*', headers: :any, methods: [:get, :post, :options, :head]
+        end
+      end
+    else
+      config.middleware.insert_before 0, Rack::Cors do
+        allow do
+          origins /^https?:\/\/[w{3}]?.*dja.io$/, /^https?:\/\/[w{3}]?.*danieljacobarcher.com$/, /^https?:\/\/djaio.herokuapp.com$/, '199.38.176.0/22'
+          resource '*', headers: :any, methods: [:get, :post, :options, :head]
+        end
       end
     end
 
