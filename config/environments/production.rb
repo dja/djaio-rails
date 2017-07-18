@@ -28,8 +28,8 @@ Rails.application.configure do
 
   # Mount Action Cable outside main process or domain
   # config.action_cable.mount_path = nil
-  config.action_cable.url = 'wss://djaio-api.herokuapp.com/cable'
-  config.action_cable.allowed_request_origins = [ 'https://djaio.herokuapp.com', 'http://djaio.herokuapp.com' ]
+  config.action_cable.url = 'wss://api.dja.io/cable'
+  config.action_cable.allowed_request_origins = [ 'https://dja.io', 'http://dja.io', 'https://www.dja.io', 'http://www.dja.io', 'https://danieljacobarcher.com', 'http://danieljacobarcher.com', 'https://www.danieljacobarcher.com', 'http://www.danieljacobarcher.com', 'https://djaio.herokuapp.com', 'http://djaio.herokuapp.com' ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
