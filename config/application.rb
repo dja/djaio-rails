@@ -25,11 +25,11 @@ module DjaioRails
     config.paths.add File.join('app', 'api'), glob: File.join('**', '*.rb')
     config.autoload_paths += Dir[Rails.root.join('app', 'api', '*')]
     config.autoload_paths += Dir[Rails.root.join('app', 'services', '**/')]
-    config.middleware.use Rack::Cors do
+
+    config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins "*"
-        resource "*", headers: :any, methods: [:get,
-            :post, :put, :delete, :options]
+        origins 'dja.io', 'danieljacobarcher.com', 'djaio.herokuapp.com', '199.38.176.0/22'
+        resource '*', headers: :any, methods: [:get, :post, :options]
       end
     end
 
