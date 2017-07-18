@@ -29,7 +29,7 @@ module DjaioRails
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins /^https?:\/\/dja.io$/, /^https?:\/\/danieljacobarcher.com$/, /^https?:\/\/djaio.herokuapp.com$/, '199.38.176.0/22'
-        resource '*', headers: :any, methods: [:get, :post, :options]
+        resource '*', headers: :any, methods: [:get, :post, :options, :head]
       end
     end
 
