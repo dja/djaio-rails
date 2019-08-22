@@ -131,7 +131,7 @@ GEM
     pg (0.21.0)
     public_suffix (2.0.5)
     puma (3.9.1)
-    rack (2.0.3)
+    rack (2.0.7)
     rack-accept (0.4.5)
       rack (>= 0.4)
     rack-cors (0.4.1)
