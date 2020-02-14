@@ -128,7 +128,7 @@ GEM
     nio4r (2.4.0)
     nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
-    pg (0.21.0)
+    pg (1.2.2)
     public_suffix (2.0.5)
     puma (3.9.1)
     rack (2.0.7)
@@ -234,7 +234,7 @@ DEPENDENCIES
   grape
   grape-active_model_serializers
   listen (~> 3.0.5)
-  pg (~> 0.18)
+  pg (~> 1.2)
   puma (~> 3.0)
   rack-cors
   rails (~> 5.0.7)
