@@ -1,14 +1,13 @@
 source 'https://rubygems.org'
-ruby '2.6.3'
+ruby '2.7.6'
 
 git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
   "https://github.com/#{repo_name}.git"
 end
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.0.2.2'
+gem 'rails', '~> 6.0.6'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.2.3'
 # Use Puma as the app server
@@ -57,4 +56,4 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
