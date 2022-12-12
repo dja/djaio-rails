@@ -1,4 +1,4 @@
-module API
+module Api
   module V1
     module Defaults
       extend ActiveSupport::Concern
@@ -28,7 +28,6 @@ module API
           end
         end
       end
-
     end
   end
 end

@@ -1,4 +1,4 @@
-describe API::Base do
+describe Api::Base do
   let!(:twitter_status) { create :twitter_status }
 
   context 'GET /api/v1/twitter_statuses' do

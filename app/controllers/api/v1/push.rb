@@ -1,10 +1,9 @@
-module API
+module Api
   module V1
     class Push < Grape::API
-      include API::V1::Defaults
+      include Api::V1::Defaults
 
       namespace :push do
-
         params do
           requires :checkin, type: JSON do
             requires :id, type: String
@@ -22,13 +21,11 @@ module API
           end
           if checkin.new_record? && checkin.save
             ActionCable.server.broadcast 'foursquare_checkins',
-              foursquare_checkin: checkin.id
+                                         foursquare_checkin: checkin.id
           end
           checkin
         end
-
       end
-
     end
   end
 end

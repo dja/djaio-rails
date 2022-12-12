@@ -1,14 +1,13 @@
-module API
+module Api
   module V1
     class Base < Grape::API
-
       before do
         header 'X-Robots-Tag', 'noindex'
       end
 
-      mount API::V1::Foursquare
-      mount API::V1::Twitter
-      mount API::V1::Push
+      mount Api::V1::Foursquare
+      mount Api::V1::Twitter
+      mount Api::V1::Push
     end
   end
 end

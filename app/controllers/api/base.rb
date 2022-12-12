@@ -1,5 +1,5 @@
-module API
+module Api
   class Base < Grape::API
-    mount API::V1::Base
+    mount Api::V1::Base
   end
 end

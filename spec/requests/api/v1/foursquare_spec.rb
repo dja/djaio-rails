@@ -1,4 +1,4 @@
-describe API::Base do
+describe Api::Base do
   let!(:foursquare_checkin) { create :foursquare_checkin }
 
   context 'GET /api/v1/foursquare_checkins' do

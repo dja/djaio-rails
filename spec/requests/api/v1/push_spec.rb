@@ -1,4 +1,4 @@
-describe API::Base do
+describe Api::Base do
 
   context 'POST /api/v1/push/foursquare' do
     it 'creates a new foursquare checkin' do

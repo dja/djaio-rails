@@ -1,7 +1,7 @@
-module API
+module Api
   module V1
     class Foursquare < Grape::API
-      include API::V1::Defaults
+      include Api::V1::Defaults
 
       resource :foursquare_checkins do
         params do
@@ -11,7 +11,6 @@ module API
           FoursquareCheckin.is_public.order(timestamp: :desc).limit(permitted_params[:count])
         end
       end
-
     end
   end
 end
